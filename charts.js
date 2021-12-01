@@ -101,13 +101,7 @@ function buildCharts(sample) {
     }];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-      width: 400, height: 250, title: "Top 10 Bacteria Cultures Found", margin: {
-        l: 0,
-        r: 0,
-        b: 0,
-        t: 0,
-        pad: 0
-      }
+      autosize:true, title: "Top 10 Bacteria Cultures Found", automargin:true
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
@@ -164,13 +158,7 @@ function buildCharts(sample) {
       
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      width: 400, height: 250, margin: {
-        l: 0,
-        r: 0,
-        b: 0,
-        t: 0,
-        pad: 0
-      }
+      autosize:true, automargin:true
     };
     // 6. Use Plotly to plot the gauge data and layout.
     Plotly.newPlot("gauge",gaugeData,gaugeLayout);
